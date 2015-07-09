@@ -1,0 +1,9 @@
+
+.idea/*
+src/assets/node_modules/*
+target/*
+.project
+.classpath
+JAX-RS.eml
+JAX-RS.iml
+JAX-RS.userlibraries

@@ -1,0 +1,49 @@
+doctype html
+html
+   head
+      meta(charset='UTF-8')
+      title ブログでもサイトでもいける汎用デザイン1
+      link(href="/asset/css/semantic.min.css",rel="stylesheet",type="text/css")
+      link(href="/asset/css/app.css?var=1",rel="stylesheet",type="text/css")
+
+
+   body
+      .ui.inverted.segment
+         .ui.inverted.secondary.pointing.menu.header-menu
+            a.item
+               | home
+            a.active.item
+               | メニュー1
+            a.item
+               | メニュー2
+            a.item
+               | メニュー3
+
+
+      .main-content(style="")
+         .ui.grid(style="width:100%;")
+            .five.wide.column
+               | サイドバー
+            .eleven.wide.column
+               .ui.grid.content-hader
+                  .sixteen.wide.column
+                     | ヘッドライン
+               .ui.grid
+                  .sixteen.wide.column
+                     | バナー広告
+               .ui.grid
+                  article.eight.wide.column
+                     .entry(style="background-image:url('http://resize.blogsys.jp/0864f6800171c2835523d39e690b2ba614dac453/crop1/343x211/http://livedoor.blogimg.jp/otyahanabi-steambowy/imgs/7/d/7d000cc3.jpg');")
+                        .title
+                           | タイトルの表示確認
+                  article.eight.wide.column
+                     .entry(style="background-image:url('http://resize.blogsys.jp/131ce00d0e2b253b2a3280dadbfae8b1124445e6/crop1/343x211/http://livedoor.blogimg.jp/otyahanabi-steambowy/imgs/7/e/7e418122.jpg');")
+
+                  article.eight.wide.column
+                     .entry(style="background-image:url('http://resize.blogsys.jp/0864f6800171c2835523d39e690b2ba614dac453/crop1/343x211/http://livedoor.blogimg.jp/otyahanabi-steambowy/imgs/7/d/7d000cc3.jpg');")
+                  article.eight.wide.column
+                     .entry(style="background-image:url('http://resize.blogsys.jp/131ce00d0e2b253b2a3280dadbfae8b1124445e6/crop1/343x211/http://livedoor.blogimg.jp/otyahanabi-steambowy/imgs/7/e/7e418122.jpg');")
+
+
+   script(src="//code.jquery.com/jquery-1.11.2.min.js")
+   script(src='/asset/js/semantic.min.js', charset='UTF-8')
