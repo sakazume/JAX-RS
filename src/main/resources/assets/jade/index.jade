@@ -8,22 +8,13 @@ html
 
 
    body
-      .ui.inverted.segment
-         .ui.inverted.secondary.pointing.menu.header-menu
-            a.item
-               | home
-            a.active.item
-               | メニュー1
-            a.item
-               | メニュー2
-            a.item
-               | メニュー3
-
+      include ./_hader-menu.jade
 
       .main-content(style="")
          .ui.grid(style="width:100%;")
             .five.wide.column
-               | サイドバー
+               include ./_sidebar.jade
+
             .eleven.wide.column
                .ui.grid.content-hader
                   .sixteen.wide.column
